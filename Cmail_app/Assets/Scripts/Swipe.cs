@@ -10,9 +10,15 @@ public class Swipe : MonoBehaviour
     float timer = 30;
     int timeleft;
 
+    public GameObject email;
+    public GameObject emailList;
+    public Vector2 touchBegin;
+    public Vector2 touchEnd;
+    public GameObject endText;
+
     void Start()
     {
-        //swipte the upper layer
+        //swipte the upper layer but it has to be detected that it is on the button instead of anywhere of the screen.
 
 
         //the green part reveals as the button is swiped
@@ -22,18 +28,29 @@ public class Swipe : MonoBehaviour
 
 
         //the entire scroll moves up
+
+        endText.SetActive(false);
+        
     }
 
     
     void Update()
     {
         timer -= Time.deltaTime;
-        //timeleft = Mathf.Round(timer);
-        countdown.text = timeleft.ToString();
+        float timeleft = timer;
+        countdown.text = Mathf.Round(timeleft).ToString() + " sec";
 
-       // if (timer - Time.deltaTime == 0)
-       // {
+        // if (timer - Time.deltaTime == 0)
+        // {
         //    Application.Quit();
+        //      endText.SetActive(false);
         //}
+    }
+
+
+    void swipeUI()
+    {
+
+
     }
 }
