@@ -8,18 +8,28 @@ public class Swipe : MonoBehaviour
 
     public Text countdown;
     float timer = 30;
-    float timeleft;
+    int timeleft;
 
     void Start()
     {
-        
+        //swipte the upper layer
+
+
+        //the green part reveals as the button is swiped
+
+
+        //the button is dissapeared
+
+
+        //the entire scroll moves up
     }
 
     
     void Update()
     {
         timer -= Time.deltaTime;
-        countdown.text = timer.ToString();
+        //timeleft = Mathf.Round(timer);
+        countdown.text = timeleft.ToString();
 
        // if (timer - Time.deltaTime == 0)
        // {
