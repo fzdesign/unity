@@ -635,11 +635,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9165063940405482066}
-  m_Father: {fileID: 2765166596036694079}
+  m_Father: {fileID: 4984698226612912739}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 645.3062, y: -546.25006}
+  m_AnchoredPosition: {x: 643.65, y: -127.20001}
   m_SizeDelta: {x: 1287.3, y: 254.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &782511335528606894
@@ -1158,7 +1158,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8525371325281215538}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1359,7 +1359,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 425312091146154175}
   - {fileID: 7426585062563154472}
   - {fileID: 4314238102143737132}
   - {fileID: 7745101327400393982}
@@ -2302,6 +2301,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 425312091146154175}
   - {fileID: 8685879844542689716}
   - {fileID: 4802371917936291459}
   - {fileID: 6223918757018665254}
@@ -2382,7 +2382,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1400345411627611481}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9076011747683335083}
+        m_TargetAssemblyTypeName: drag_email, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5416689946064905825
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,6 +2598,7 @@ GameObject:
   - component: {fileID: 6299428822083972051}
   - component: {fileID: 1666999083605689197}
   - component: {fileID: 9185198556731890381}
+  - component: {fileID: 9185198556731890382}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4286,6 +4299,8 @@ GameObject:
   - component: {fileID: 6818066679105512934}
   - component: {fileID: 1400345411627611481}
   - component: {fileID: 5332651617461231549}
+  - component: {fileID: 9076011747683335082}
+  - component: {fileID: 9076011747683335083}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -4293,6 +4308,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9076011747683335082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9076011747683335081}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77427d9717f604cae9232fee1c2b6412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9076011747683335083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9076011747683335081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627872895cd5c47fb9663c8d838e2e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swipeThreshold: 50
+  button: {fileID: 9076011747683335081}
+  UiList: {fileID: 0}
+  panelTransform: {fileID: 0}
+  speed: 1
 --- !u!222 &9081617137241753171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4354,11 +4398,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5860534891432413911}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77427d9717f604cae9232fee1c2b6412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9185198556731890382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5860534891432413911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627872895cd5c47fb9663c8d838e2e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swipeThreshold: 50
+  button: {fileID: 5860534891432413911}
+  UiList: {fileID: 0}
+  panelTransform: {fileID: 4984698226612912739}
+  speed: 0.3
 --- !u!224 &9202205254003855118
 RectTransform:
   m_ObjectHideFlags: 0

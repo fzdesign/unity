@@ -14,7 +14,6 @@ public class drag_email : MonoBehaviour
         
     }
 
-    
     void Update()
     {
         if (Input.touchCount <= 0) return;
@@ -25,7 +24,7 @@ public class drag_email : MonoBehaviour
         if (hoveringTag)
         {
             myRectTransform.anchoredPosition = new Vector3(buttonStarpos.x + (curTouch.position.x - startpos.x), myRectTransform.anchoredPosition.y);
-            
+            Debug.Log("hovered?");
         }
 
         if (curTouch.phase == TouchPhase.Ended && hoveringTag)
@@ -46,6 +45,6 @@ public class drag_email : MonoBehaviour
         hoveringTag = true;
         startpos = Input.GetTouch(0).position;
         buttonStarpos = GetComponent<RectTransform>().anchoredPosition;
-        Debug.Log(buttonStarpos);
+        Debug.Log("OnPress");
     }
 }
