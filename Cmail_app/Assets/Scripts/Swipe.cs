@@ -7,7 +7,7 @@ public class Swipe : MonoBehaviour
 {
 
     public Text countdown;
-    float timer = 30;
+    float timer = 10;
     int timeleft;
 
     public GameObject email;
