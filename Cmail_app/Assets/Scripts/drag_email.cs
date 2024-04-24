@@ -20,7 +20,7 @@ public class drag_email : MonoBehaviour
         if (Input.touchCount <= 0) return;
         Touch curTouch = Input.GetTouch(0);
         RectTransform myRectTransform = GetComponent<RectTransform>();
-       // Debug.Log(buttonStarpos);
+        Debug.Log(Input.mousePosition);
 
         if (hoveringTag)
         {
@@ -29,7 +29,7 @@ public class drag_email : MonoBehaviour
         }
 
         if (curTouch.phase == TouchPhase.Ended && hoveringTag)
-        {
+        { 
             hoveringTag = false;
             myRectTransform.anchoredPosition = buttonStarpos;
         }

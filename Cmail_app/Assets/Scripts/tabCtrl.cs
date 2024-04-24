@@ -7,7 +7,7 @@ public class tabCtrl : MonoBehaviour
 {
     public Text emailcount;
 
-    int email = 999;
+    int email = 100;
 
     void Start()
     {
@@ -21,6 +21,11 @@ public class tabCtrl : MonoBehaviour
         {   
            email -= 1;
             emailcount.text = email.ToString();
+            if (email == 0)
+            {
+                
+                //win the game
+            }
         }
 
     }
