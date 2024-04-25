@@ -2317,7 +2317,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000000011129, y: -43.5}
+  m_AnchoredPosition: {x: -0.000000011129, y: -0.15649742}
   m_SizeDelta: {x: 1284, y: 2158.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5169879345189125311
@@ -2729,7 +2729,7 @@ MonoBehaviour:
   m_Content: {fileID: 4984698226612912739}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 0
   m_Elasticity: 0.3
   m_Inertia: 1
   m_DecelerationRate: 0.19
@@ -3277,8 +3277,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.6562, y: -66}
-  m_SizeDelta: {x: 1284, y: 2071.9}
+  m_AnchoredPosition: {x: 1.6781, y: -91}
+  m_SizeDelta: {x: 1284, y: 10894.884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &7490008018118073975
 RectTransform:
@@ -4334,7 +4334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swipeThreshold: 50
   button: {fileID: 9076011747683335081}
-  UiList: {fileID: 0}
+  UiList: {fileID: 8525371325281215538}
   panelTransform: {fileID: 0}
   speed: 1
 --- !u!222 &9081617137241753171
@@ -4417,7 +4417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swipeThreshold: 50
   button: {fileID: 5860534891432413911}
-  UiList: {fileID: 0}
+  UiList: {fileID: 8525371325281215538}
   panelTransform: {fileID: 4984698226612912739}
   speed: 0.3
 --- !u!224 &9202205254003855118

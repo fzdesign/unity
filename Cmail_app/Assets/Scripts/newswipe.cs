@@ -35,14 +35,13 @@ public class newswipe : MonoBehaviour
                 Vector2 endPos = touch.position;
                 Vector2 swipeDirection = endPos - startPos;
 
-                // Check if swipe direction is towards the left
                 if (Mathf.Abs(swipeDirection.x) > swipeThreshold && swipeDirection.x < 0)
                 {   
                     
-                    Destroy(button); // Destroy the button UI item
-                                     //float moveAmount = speed * Time.deltaTime;
-
-                    panelTransform.anchoredPosition += new Vector2(0f, 900);
+                    Destroy(button);
+                    float moveAmount = speed * Time.deltaTime;
+                    //panelTransform.anchoredPosition += new Vector2(0f, 900);
+                    UiList.GetComponent<RectTransform>().anchoredPosition += new Vector2(0f,200);
 
                 }
             }
