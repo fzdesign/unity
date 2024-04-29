@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Swipe : MonoBehaviour
 {
@@ -14,23 +15,10 @@ public class Swipe : MonoBehaviour
     public GameObject emailList;
     public Vector2 touchBegin;
     public Vector2 touchEnd;
-    public GameObject endText;
-
+   
     void Start()
     {
-        //swipte the upper layer but it has to be detected that it is on the button instead of anywhere of the screen.
-
-
-        //the green part reveals as the button is swiped
-
-
-        //the button is dissapeared
-
-
-        //the entire scroll moves up
-
-        endText.SetActive(false);
-        
+       
     }
 
     
@@ -40,17 +28,17 @@ public class Swipe : MonoBehaviour
         float timeleft = timer;
         countdown.text = Mathf.Round(timeleft).ToString() + " sec";
 
-        // if (timer - Time.deltaTime == 0)
-        // {
-        //    Application.Quit();
-        //      endText.SetActive(false);
-        //}
+         if (timer - Time.deltaTime == 0)
+         {
+            timer = 0;
+            loadScenebyName("Ending");
+            Debug.Log("time is up");
+         }
     }
 
-
-    void swipeUI()
+    public void loadScenebyName(string sceneName)
     {
-
-
+        SceneManager.LoadScene("Ending");
     }
+
 }

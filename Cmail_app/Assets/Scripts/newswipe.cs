@@ -41,7 +41,7 @@ public class newswipe : MonoBehaviour
                     Destroy(button);
                     float moveAmount = speed * Time.deltaTime;
                     //panelTransform.anchoredPosition += new Vector2(0f, 900);
-                    UiList.GetComponent<RectTransform>().anchoredPosition += new Vector2(0f,200);
+                    UiList.GetComponent<RectTransform>().anchoredPosition += new Vector2(0f,20);
 
                 }
             }
