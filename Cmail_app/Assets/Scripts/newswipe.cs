@@ -13,9 +13,16 @@ public class newswipe : MonoBehaviour
     public GameObject UiList;
     public RectTransform panelTransform; 
     public float speed = 1.0f;
+    public Text emailcount;
+    int email = 50;
+ 
+
 
     void Update()
     {
+        
+
+
         // Check for touch input
         if (Input.touchCount > 0)
         {
@@ -40,8 +47,15 @@ public class newswipe : MonoBehaviour
                     
                     Destroy(button);
                     float moveAmount = speed * Time.deltaTime;
-                    //panelTransform.anchoredPosition += new Vector2(0f, 900);
+                    panelTransform.anchoredPosition += new Vector2(0f, 200);
                     UiList.GetComponent<RectTransform>().anchoredPosition += new Vector2(0f,20);
+                    email -= 1;
+                    emailcount.text = email.ToString();
+                    if (email == 0)
+                    {
+
+                        Debug.Log("win the game");
+                    }
 
                 }
             }
