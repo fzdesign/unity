@@ -28,8 +28,9 @@ public class Timer : MonoBehaviour
          if (timer<=0)
          {
             
-            SceneManager.LoadScene("Ending");
+            SceneManager.LoadScene("Ending2");
             Debug.Log("time is up");
+
 
          }
     }
