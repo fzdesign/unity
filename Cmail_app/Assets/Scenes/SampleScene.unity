@@ -383,10 +383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdown: {fileID: 835892394}
-  email: {fileID: 0}
-  emailList: {fileID: 0}
-  touchBegin: {x: 0, y: 0}
-  touchEnd: {x: 0, y: 0}
+  SceneName: Ending
 --- !u!1 &882558603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,10 +1091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdown: {fileID: 1604202164}
-  email: {fileID: 0}
-  emailList: {fileID: 0}
-  touchBegin: {x: 0, y: 0}
-  touchEnd: {x: 0, y: 0}
+  SceneName: 
 --- !u!114 &1604202164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2117,7 +2111,7 @@ GameObject:
   - component: {fileID: 4345696454573332631}
   - component: {fileID: 896287226149203336}
   m_Layer: 5
-  m_Name: Button (9)
+  m_Name: logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

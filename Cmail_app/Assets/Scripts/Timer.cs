@@ -20,10 +20,12 @@ public class Timer : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
+        Debug.Log("timer"+timer);
         float timeleft = timer;
+        Debug.Log("timeleft"+timeleft);
         countdown.text = Mathf.Round(timeleft).ToString() + " sec";
 
-         if (timeleft  == 0)
+         if (timer<=0)
          {
             
             SceneManager.LoadScene("Ending");
